@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Send Pending Emails",
+    "version": "1.0",
+    "description": "Envoie automatiquement les e-mails en attente à intervalles réguliers",
+    "icons": {
+      "16": "icons/icon.svg",
+      "32": "icons/icon.svg",
+      "48": "icons/icon.svg",
+      "64": "icons/icon.svg",
+      "128": "icons/icon.svg"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "options_ui": {
+      "page": "options/options.html"
+    },
+    "permissions": [
+      "storage",
+      "messagesRead",
+      "messagesMove",
+      "accountsRead"
+    ]
+  }
